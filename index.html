@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factux — Facturas y cotizaciones profesionales sin Excel</title>
+<meta name="description" content="Generador de facturas y cotizaciones para freelancers y micro-negocios de Latinoamérica. Con ITBIS/IVA, RNC y monedas LATAM. 100% en español, gratis, sin registro.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f0b73e'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial' font-weight='bold' fill='%23231a05'>F</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><b>Fact</b>ux</a>
+    <div class="nav-links">
+      <a href="#funciones">Funciones</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#pago">Cómo pagar</a>
+    </div>
+    <a href="#crear" class="btn small">Crear mi factura</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <span class="eyebrow">100% en español · Sin registro</span>
+    <h1>Facturas y cotizaciones profesionales <span class="hl">sin Excel</span></h1>
+    <p class="sub">Para freelancers y micro-negocios de Latinoamérica: llena los datos, mira el preview en vivo y descarga tu PDF. Con ITBIS/IVA, RNC y tu moneda local.</p>
+    <div class="hero-cta">
+      <a href="#crear" class="btn">Crear mi factura</a>
+      <a href="#precios" class="btn ghost">Ver planes</a>
+    </div>
+    <div class="hero-notes">
+      <span>✓ Gratis para siempre</span><span>✓ Funciona en tu celular</span><span>✓ Tus datos se quedan en tu navegador</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== FUNCIONES ===================== -->
+<section class="block" id="funciones">
+  <div class="wrap">
+    <h2 class="sec-title">Todo lo que tu Excel no hace</h2>
+    <p class="sec-sub">Pensado para cómo se factura de verdad en RD, México, Colombia, Perú y Costa Rica.</p>
+    <div class="grid cols-3">
+      <div class="card"><span class="ico">🧾</span><h3>Factura o cotización en un clic</h3><p>Cambia de modo sin perder los datos. Numeración automática secuencial (FAC-0001, COT-0001…) que puedes editar.</p></div>
+      <div class="card"><span class="ico">💱</span><h3>Tu moneda local</h3><p>DOP, USD, MXN, COP, CRC y PEN con formato correcto de cada país. Sin conversiones raras.</p></div>
+      <div class="card"><span class="ico">🧮</span><h3>ITBIS/IVA automático</h3><p>Activa el impuesto con un toggle y ajusta el porcentaje (18% por defecto para RD). Descuento % incluido.</p></div>
+      <div class="card"><span class="ico">👁️</span><h3>Preview en vivo</h3><p>Lo que ves es lo que imprimes: diseño profesional que se actualiza mientras escribes.</p></div>
+      <div class="card"><span class="ico">🖨️</span><h3>Exporta a PDF</h3><p>Botón de imprimir con formato limpio de hoja. Sin marcas de agua en el plan PRO.</p></div>
+      <div class="card"><span class="ico">🔒</span><h3>Privado por diseño</h3><p>Sin cuentas, sin servidores: todo se guarda en tu navegador. Tus clientes y tus números no salen de aquí.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRECIOS ===================== -->
+<section class="block" id="precios">
+  <div class="wrap">
+    <h2 class="sec-title">Un precio simple, sin suscripción</h2>
+    <p class="sec-sub">Empieza gratis. Si te gusta, desbloquea todo con un solo pago.</p>
+    <div class="price-cards">
+      <div class="card price-card">
+        <h3>Gratis</h3>
+        <div class="monto">US$0 <small>para siempre</small></div>
+        <ul>
+          <li>Generador de facturas y cotizaciones</li>
+          <li>1 plantilla de diseño</li>
+          <li>ITBIS/IVA y descuento %</li>
+          <li>Todas las monedas LATAM</li>
+          <li>Exportar a PDF</li>
+          <li class="no">Sin marca "Generado con Factux"</li>
+          <li class="no">Logo propio</li>
+          <li class="no">Plantillas premium</li>
+        </ul>
+        <a href="#crear" class="btn ghost" style="width:100%;text-align:center">Empezar gratis</a>
+      </div>
+      <div class="card price-card pro">
+        <span class="tag">Recomendado</span>
+        <h3>PRO</h3>
+        <div class="monto">US$19 <small>pago único</small></div>
+        <ul>
+          <li>Todo lo del plan Gratis</li>
+          <li>Sube tu logo propio</li>
+          <li>5 plantillas de diseño premium</li>
+          <li>Sin marca "Generado con Factux"</li>
+          <li>Acceso de por vida, sin mensualidad</li>
+        </ul>
+        <a href="#pago" class="btn" style="width:100%;text-align:center">Desbloquear PRO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <h2 class="sec-title">Preguntas frecuentes</h2>
+    <p class="sec-sub">Lo que nos preguntan los freelancers antes de facturar.</p>
+    <div class="faq">
+      <details>
+        <summary>¿Cómo funciona el ITBIS/IVA en Factux?</summary>
+        <p>Activas el interruptor de impuesto y escribes el porcentaje que aplique en tu país (<b>18% por defecto</b>, que es el ITBIS de República Dominicana; en México suele ser 16% de IVA, en Colombia 19%, en Perú 18% y en Costa Rica 13%). Factux calcula el impuesto sobre el subtotal menos el descuento y te muestra el total final. <b>Ojo:</b> esto es una herramienta de cálculo y presentación; si necesitas factura fiscal válida ante tu administración tributaria (DGII, SAT, DIAN, SUNAT…), consulta a tu contador sobre los requisitos de comprobantes fiscales de tu país.</p>
+      </details>
+      <details>
+        <summary>¿Para qué sirve el campo RNC?</summary>
+        <p>En República Dominicana el RNC (Registro Nacional de Contribuyentes) identifica tu negocio ante la DGII. Si eres freelancer informal o facturas fuera de RD, déjalo vacío: es opcional. En otros países puedes usarlo para tu NIT, RUC, RFC o cédula jurídica.</p>
+      </details>
+      <details>
+        <summary>¿Necesito crear una cuenta o descargar algo?</summary>
+        <p>No. Todo corre en tu navegador: no hay registro, no hay instalación y no necesitas internet después de cargar la página. Tus datos se guardan solo en tu dispositivo.</p>
+      </details>
+      <details>
+        <summary>¿Mis datos están seguros?</summary>
+        <p>Factux no tiene servidor: la información de tus facturas vive en el <b>localStorage de tu navegador</b> y nunca se envía a ningún lado. Si borras los datos del navegador, se borran tus borradores: te recomendamos exportar a PDF lo importante.</p>
+      </details>
+      <details>
+        <summary>¿Cómo pago el plan PRO?</summary>
+        <p>Dos vías: <b>USDT por red BSC (BEP-20)</b>, pegando el hash de tu transacción para verificación automática en la blockchain; o <b>PayPal</b>, enviando tu recibo por correo y recibiendo un código de activación. Los datos exactos están en la sección <a href="#pago">Cómo pagar</a>.</p>
+      </details>
+      <details>
+        <summary>¿La numeración es automática?</summary>
+        <p>Sí. Las facturas siguen la secuencia FAC-0001, FAC-0002… y las cotizaciones COT-0001, COT-0002…, cada una por su lado. Puedes editar el número a mano si ya llevas tu propio consecutivo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RIELES DE COBRO ===================== -->
+<section class="block" id="pago">
+  <div class="wrap">
+    <h2 class="sec-title">Cómo pagar el PRO (US$19)</h2>
+    <p class="sec-sub">Elige tu vía. Copia el dato exacto: un error de tipeo puede perder tu pago.</p>
+    <div class="paybox">
+      <div class="rail">
+        <div class="rail-head"><span class="ico">🪙</span><h3>USDT — red BSC (BEP-20)</h3></div>
+        <small>Envía exactamente <b>19 USDT</b> a esta dirección. Luego pega el hash de la transacción en el botón "Desbloquear PRO" del generador: la verificación es automática contra la blockchain.</small>
+        <div class="addr" id="usdt-addr">0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172</div>
+        <div class="row">
+          <button class="copybtn" data-copy="0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172">Copiar dirección</button>
+          <a href="#crear" class="btn small">Ya pagué → verificar</a>
+        </div>
+        <small>⚠️ Solo red BSC (BEP-20). No envíes desde otra red.</small>
+      </div>
+      <div class="rail">
+        <div class="rail-head"><span class="ico">💳</span><h3>PayPal</h3></div>
+        <small>Envía <b>US$19</b> por PayPal a este correo y reenvíanos tu recibo. Te respondemos con tu código de activación PRO.</small>
+        <div class="addr" id="pp-email">chachiafk@gmail.com</div>
+        <div class="row">
+          <button class="copybtn" data-copy="chachiafk@gmail.com">Copiar correo</button>
+          <a href="#crear" class="btn small ghost">Tengo mi código → activar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GENERADOR ===================== -->
+<section class="block" id="crear">
+  <div class="wrap">
+    <h2 class="sec-title">El generador</h2>
+    <p class="sec-sub">Llena, mira el preview y exporta. Sin cuentas, sin vueltas.</p>
+    <div class="tool-shell">
+      <!-- Formulario -->
+      <div class="panel no-print">
+        <h3>Tipo de documento</h3>
+        <div class="doctype">
+          <button type="button" id="btn-fac" class="active">🧾 Factura</button>
+          <button type="button" id="btn-cot">📋 Cotización</button>
+        </div>
+        <div class="frow">
+          <div><label class="f" for="inv-number">Número</label><input type="text" id="inv-number"></div>
+          <div><label class="f" for="doc-status-lbl">Estado</label>
+            <div class="statuspills" id="doc-status-lbl">
+              <button type="button" data-st="borrador" class="active">Borrador</button>
+              <button type="button" data-st="emitida">Emitida</button>
+              <button type="button" data-st="pagada">Pagada</button>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div><label class="f" for="doc-date">Fecha</label><input type="date" id="doc-date"></div>
+          <div><label class="f" for="doc-due">Vencimiento</label><input type="date" id="doc-due"></div>
+        </div>
+
+        <h3>Tus datos (emisor)</h3>
+        <div class="fgroup"><label class="f" for="em-name">Nombre / negocio</label><input type="text" id="em-name" placeholder="Ej: Diseños Chachi"></div>
+        <div class="frow">
+          <div><label class="f" for="em-rnc">RNC / NIT / RFC (opcional)</label><input type="text" id="em-rnc" placeholder="Ej: 402-XXXXXXX-X"></div>
+          <div><label class="f" for="em-country">País</label>
+            <select id="em-country">
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="México">México</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Perú">Perú</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Otro país LATAM">Otro país LATAM</option>
+            </select>
+          </div>
+        </div>
+        <div class="fgroup"><label class="f" for="em-contact">Contacto (opcional)</label><input type="text" id="em-contact" placeholder="Teléfono o correo"></div>
+
+        <h3>Datos del cliente</h3>
+        <div class="fgroup"><label class="f" for="cl-name">Nombre / empresa</label><input type="text" id="cl-name" placeholder="Ej: Colmado La Esquina"></div>
+        <div class="fgroup"><label class="f" for="cl-email">Correo del cliente (opcional)</label><input type="email" id="cl-email" placeholder="cliente@correo.com"></div>
+
+        <h3>Líneas del documento</h3>
+        <div id="lines"></div>
+        <button type="button" class="btn ghost small" id="add-line">+ Agregar línea</button>
+
+        <h3>Moneda e impuestos</h3>
+        <div class="frow">
+          <div><label class="f" for="currency">Moneda</label>
+            <select id="currency">
+              <option value="DOP">DOP — Peso dominicano</option>
+              <option value="USD">USD — Dólar</option>
+              <option value="MXN">MXN — Peso mexicano</option>
+              <option value="COP">COP — Peso colombiano</option>
+              <option value="CRC">CRC — Colón costarricense</option>
+              <option value="PEN">PEN — Sol peruano</option>
+            </select>
+          </div>
+          <div><label class="f" for="discount">Descuento %</label><input type="number" id="discount" min="0" max="100" step="0.01" value="0"></div>
+        </div>
+        <div class="taxrow">
+          <label class="switch"><input type="checkbox" id="tax-on" checked><span class="slider"></span></label>
+          <label for="tax-on">ITBIS / IVA</label>
+          <input type="number" id="tax-rate" min="0" max="100" step="0.01" value="18" aria-label="Porcentaje de impuesto">
+          <span style="color:var(--muted)">%</span>
+        </div>
+        <p class="hint">El impuesto se calcula sobre el subtotal menos el descuento.</p>
+
+        <h3>Notas</h3>
+        <div class="fgroup"><textarea id="notes" placeholder="Ej: Pago por transferencia. Válido por 15 días."></textarea></div>
+
+        <div class="prolock" id="prolock">
+          <h3>Opciones PRO</h3>
+          <div class="locknote" id="locknote">🔒 Estas opciones se desbloquean con el plan PRO (US$19 pago único).</div>
+          <div class="pro-only">
+            <div class="fgroup"><label class="f" for="logo-url">URL de tu logo</label><input type="url" id="logo-url" placeholder="https://…/mi-logo.png"></div>
+            <div class="fgroup"><label class="f" for="template">Plantilla de diseño</label>
+              <select id="template">
+                <option value="tpl-clasico">Clásica (gratis)</option>
+                <option value="tpl-moderno">Moderna — PRO</option>
+                <option value="tpl-minimal">Minimalista — PRO</option>
+                <option value="tpl-tropical">Tropical — PRO</option>
+                <option value="tpl-oscuro">Oscura — PRO</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="tool-actions">
+          <button type="button" class="btn" id="btn-print">🖨️ Imprimir / PDF</button>
+          <button type="button" class="btn ghost" id="btn-pro">🔓 Desbloquear PRO</button>
+          <button type="button" class="btn ghost" id="btn-clear">Limpiar</button>
+        </div>
+      </div>
+
+      <!-- Preview -->
+      <div class="preview-wrap">
+        <div id="print-area">
+          <div class="sheet tpl-clasico" id="sheet"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MODAL PRO ===================== -->
+<div class="modal" id="pro-modal" role="dialog" aria-modal="true" aria-labelledby="pro-title">
+  <div class="modal-card">
+    <h3 id="pro-title">Desbloquear Factux PRO — US$19</h3>
+    <p>Un solo pago, acceso de por vida. Elige cómo pagaste:</p>
+    <div class="mtabs">
+      <button type="button" id="mtab-usdt" class="active">🪙 Pagué con USDT</button>
+      <button type="button" id="mtab-pp" >💳 Pagué con PayPal</button>
+    </div>
+    <div class="mtab active" id="mpane-usdt">
+      <p>Envía <b>19 USDT (red BSC / BEP-20)</b> a:</p>
+      <div class="txaddr">0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172</div>
+      <button type="button" class="copybtn" data-copy="0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172">Copiar dirección</button>
+      <p style="margin-top:14px">Pega el <b>hash de tu transacción</b> (0x…):</p>
+      <input type="text" id="tx-hash" placeholder="0x…" style="margin-bottom:10px">
+      <button type="button" class="btn" id="btn-verify" style="width:100%">Verificar pago en la blockchain</button>
+      <div class="verify-msg" id="verify-msg"></div>
+    </div>
+    <div class="mtab" id="mpane-pp">
+      <p>Envía <b>US$19</b> por PayPal a <b>chachiafk@gmail.com</b> y reenvíanos tu recibo al mismo correo. Te respondemos con tu código de activación.</p>
+      <label class="f" for="pp-code-email">Correo con el que pagaste</label>
+      <input type="email" id="pp-code-email" placeholder="tu@correo.com" style="margin-bottom:10px">
+      <label class="f" for="pp-code">Código de activación (16 caracteres)</label>
+      <input type="text" id="pp-code" placeholder="Ej: a1b2c3d4e5f60718" maxlength="16" style="margin-bottom:10px">
+      <button type="button" class="btn" id="btn-pp-verify" style="width:100%">Activar con mi código</button>
+      <div class="verify-msg" id="pp-msg"></div>
+    </div>
+    <button type="button" class="btn ghost modal-close" id="modal-close" style="width:100%">Cerrar</button>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="fbrand"><b>Fact</b>ux</div>
+    <p>© 2026 Chachi · Hecho para freelancers de Latinoamérica</p>
+    <p style="margin-top:6px;font-size:.8rem">Factux es una herramienta de cálculo y presentación. No sustituye asesoría contable ni emite comprobantes fiscales oficiales.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
